@@ -570,6 +570,7 @@ class SwipeableViews extends React.Component {
           this.props.onChangeIndex(indexNew, indexLatest, {
             reason: 'swipe',
           });
+          console.log("Swipe")
         }
 
         // Manually calling handleTransitionEnd in that case as isn't otherwise.
@@ -657,6 +658,7 @@ class SwipeableViews extends React.Component {
       this.props.onChangeIndex(indexNew, indexLatest, {
         reason: 'focus',
       });
+      console.log("Focus")
     }
   };
 
